@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url('greece.jpg');
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+    height: 100%;
+    background-color: aliceblue;
+    /* border: 5px solid; */
+    float: right;
+    background-color: darkturquoise;
+   
+}
+
+form {
+    background-color: lightseagreen;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 5px 10px darkslategray;
+}
+
+form > h2 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+form > h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#first-field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; 
+    border: none;    
+}
+
+#first-field input {
+    width: 60%;
+    font-size: 16px;
+    padding: 3px;
+}
+
+#second-field {
+    width: 50%;
+    margin-top: 0.5rem;
+    border: non;
+}
+
+#second-field *{
+    margin: 3px;
+    padding-left: 8px;
+}
+
+#secon-field h4 {
+}
+
+button {
+    font-size: larger;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    border-radius: 12px;
+    background-color: #1269C7;
+    border: 1px solid black;
+}
+
+blockquote {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 32px;
+    width: 80%;
+    color: white;
+    margin: 1rem auto;
+}
+
+#form-header > p {
+    width: 80%;
+    margin: 10px auto;  
+    font-style: italic;  
+}
+

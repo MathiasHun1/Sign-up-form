@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up-Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="form-header">
+            <blockquote>"A munka megtölti a pénztárcád, az élmények pedig a lelked"</blockquote>
+            <p>Ne maradj le róluk, utazz velünk Görögországba! <strong>Személyre szabott</strong> ajánlataink csad rád várnak!</p>
+        </div>
+        <form action="example.com/path" method="post">
+            <h2>Iratkozz Fel!</h2>
+            <fieldset id="first-field">
+                <label for="user_name">Név</label>
+                <input type="text" name="name" id="user_name" placeholder="Kovács Márlonbrándó">
+                <label for="user_email">Email</label>
+                <input type="email" name="email" id="user_email" placeholder="Kiakiraly@envagyok.ro">
+                <label for="user_password">Jelszó</label>
+                <input type="password" name="password" id="user_password">
+                <input type="text" name="password_confirm" id="pasword-confirm">
+            </fieldset>
+            <fieldset id="second-field">
+                <h4>Hogyan utaznál?</h4>
+                <div>
+                    <input class="radio" type="radio" name="option" id="flight" checked>
+                    <label for="flight">Repülővel</label>
+                </div>
+                <div>
+                    <input class="radio" type="radio" name="option" id="car">
+                    <label for="car">Mergámmal</label>
+                </div>
+                <div>
+                    <input class="radio" type="radio" name="option" id="bus">
+                    <label for="bus">Rátok Bízom</label>
+                </div>
+            </fieldset>
+            <button>Regisztrálok</button>
+        </form>
+        <div id="form-footer"></div>
+    </div>
+</body>
+</html>
