@@ -1,15 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 *, *:before, *:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 
 body {
-    background-image: url('greece.jpg');
     height: 100vh;
+}
+
+.image-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url('greece.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.opaque-layer {
+    position: absolute;
+    content: '';
+    height: calc(250px + 1rem);
+    width: calc(100vw - 350px);
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    /* top: calc(250px + 1rem); */
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+} 
+
+#tours-name {
+    font-family: 'Permanent Marker';
+    font-size: 50px;
+    color:#fffb00;
+    letter-spacing: 6px;
+}
+
+.icon {
+    width: 120px;
+    height: 120px;
+    background-image: url("icon.webp");
+    background-size: cover;
 }
 
 .container {
@@ -17,12 +55,18 @@ body {
     height: 100%;
     background-color: aliceblue;
     /* border: 5px solid; */
-    float: right;
     background-color: darkturquoise;
-   
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#form-header {
+    height: 250px;
 }
 
 form {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: lightseagreen;
     padding: 1rem;
     display: flex;
@@ -60,15 +104,12 @@ form > h3 {
 #second-field {
     width: 50%;
     margin-top: 0.5rem;
-    border: non;
+    border: none;
 }
 
 #second-field *{
     margin: 3px;
     padding-left: 8px;
-}
-
-#secon-field h4 {
 }
 
 button {
@@ -93,5 +134,9 @@ blockquote {
     width: 80%;
     margin: 10px auto;  
     font-style: italic;  
+}
+
+button:hover {
+    filter: brightness(80%);
 }
 
