@@ -14,6 +14,8 @@ nameInput.addEventListener('blur', () => {
         nameInput.style.backgroundColor = 'red';
 
     }
+
+    if (nameInput.value === '') {nameInput.style.backgroundColor = 'white'}
 })
 
 emailInput.addEventListener('blur', () => {
@@ -22,6 +24,8 @@ emailInput.addEventListener('blur', () => {
     } else {
         emailInput.style.backgroundColor = 'red';
     }
+
+    if (emailInput.value === '') {emailInput.style.backgroundColor = 'white'}
 })
 
 passwordInput.addEventListener('blur', ()=> {
@@ -31,6 +35,8 @@ passwordInput.addEventListener('blur', ()=> {
         passwordInput.style.backgroundColor = 'red';
 
     }
+
+    if (passwordInput.value === '') {passwordInput.style.backgroundColor = 'white'}
 })
 
 confirmInput.addEventListener('blur', () => {
@@ -39,6 +45,8 @@ confirmInput.addEventListener('blur', () => {
     } else {
         confirmInput.style.backgroundColor = 'red';
     }
+
+    if (confirmInput.value === '') {confirmInput.style.backgroundColor = 'white'}
 })
 
 
