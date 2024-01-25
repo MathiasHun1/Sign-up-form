@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
@@ -16,7 +18,9 @@ body {
     width: 100%;
     background-image: url('greece.jpg');
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size: 100% auto;
+    background-position: center center;
+    background-size: cover;
 }
 
 .opaque-layer {
@@ -141,3 +145,7 @@ button:hover {
     filter: brightness(80%);
 }
 
+#user_name:focus, #user_email:focus, #user_password:focus, #pasword_confirm:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}

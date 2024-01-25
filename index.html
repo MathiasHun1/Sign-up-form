@@ -18,16 +18,16 @@
             <blockquote>"A munka megtölti a pénztárcád, az élmények pedig a lelked"</blockquote>
             <p>Utazz velünk Görögországba! <strong>Személyre szabott</strong> ajánlataink csak Rád várnak!</p>
         </div>
-        <form action="example.com/path" method="post">
+        <form action="example.com/path" method="post" novalidate>
             <h2>Iratkozz Fel!</h2>
             <fieldset id="first-field">
                 <label for="user_name">Név</label>
-                <input type="text" name="name" id="user_name" placeholder="Kovács Márlonbrándó">
+                <input type="text" name="name" id="user_name" placeholder="*Kovács Márlonbrándó" required>
                 <label for="user_email">Email</label>
-                <input type="email" name="email" id="user_email" placeholder="Kiakiraly@envagyok.ro">
+                <input type="email" name="email" id="user_email" placeholder="*Kiakiraly@envagyok.ro" novalidate required>
                 <label for="user_password">Jelszó</label>
-                <input type="password" name="password" id="user_password" placeholder="Adj meg egy jelszót">
-                <input type="text" name="password_confirm" id="pasword-confirm" placeholder="Jelszó megerősítése">
+                <input type="password" name="password" id="user_password" placeholder="*Adj meg egy jelszót" minlength="8" required pattern="()">
+                <input type="password" name="password_confirm" id="pasword_confirm" placeholder="*Jelszó megerősítése" required>
             </fieldset>
             <fieldset id="second-field">
                 <h4>Hogyan utaznál?</h4>
@@ -48,5 +48,6 @@
         </form>
         <div id="form-footer"></div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
